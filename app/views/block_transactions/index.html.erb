@@ -1,0 +1,10 @@
+<div class="block-transactions">
+  <div>Sender</div>
+  <div>Receiver</div>
+  <div>Deposit</div>
+  <% @block_transactions.each do |block_transaction| %>
+    <div><%= block_transaction.sender %></div>
+    <div><%= block_transaction.receiver %></div>
+    <div><%= block_transaction.action_data["deposit"] %></div>
+  <% end %>
+</div>
